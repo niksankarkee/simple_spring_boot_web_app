@@ -1,0 +1,13 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+logging:
+  level:
+    org:
+      springframework: info
+    com:
+      niksan:
+        springboot:
+          myfirstwebapp: debug
