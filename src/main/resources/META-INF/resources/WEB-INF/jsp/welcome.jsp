@@ -1,20 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" />
-    <title>Welcome page</title>
-</head>
-<body>
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>
     <div  class="container">
-        <div>
-            Welcome to my page
-        </div>
+        <h1>
+            Welcome to my page: ${name}
+        </h1>
         <hr />
         <div><a href="list-todos">Manage</a> Your Todos</div>
     </div>
-</body>
-</html>
+<%@ include file="common/footer.jspf" %>
