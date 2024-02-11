@@ -6,9 +6,16 @@ spring:
     format:
       date: yyyy-MM-dd
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:mysql://localhost:3306/todos
+    username: todos-user
+    password: dummytodos
   jpa:
-    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
 
 logging:
   level:
